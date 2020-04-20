@@ -1,0 +1,13 @@
+<launch>
+
+    <node pkg="hokuyo3d" type="hokuyo3d" name="hokuyo3d">
+        <param name="ip" value="192.168.0.10" />
+        <param name="port" value="10940" />
+        <param name="frame_id" value="hokuyo3d" />
+        <param name="imu_frame_id" value="imu_link" />
+        <param name="mag_frame_id" value="mag_link" />
+        <param name="range_min" value="0.0" />
+        <param name="auto_reset" value="false" />
+        <param name="allow_jump_back" value="false" />
+    </node>
+</launch>
